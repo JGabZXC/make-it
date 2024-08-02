@@ -283,6 +283,12 @@ h6 {
     margin-block: 1rem;
 }
 
+@media (width <=720px) {
+    .hero--con {
+        flex-direction: column;
+    }
+}
+
 /* TESTIMONY--SECTION */
 .testimony--section {
     background-color: var(--text-1);
