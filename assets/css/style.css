@@ -149,7 +149,7 @@ h6 {
 
 /* IMPORTED ANIMATION CUSTOM */
 .intro--con .animate__animated.animate__backInUp {
-    animation-delay: 2s;
+    animation-delay: .5s;
 }
 
 /* HEADER */
@@ -271,6 +271,68 @@ h6 {
     aspect-ratio: 16/9;
 }
 
+/* HERO--SECTION */
+.hero--con {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.hero--con img {
+    /* aspect-ratio: 16/9; */
+    margin-block: 1rem;
+}
+
+/* TESTIMONY--SECTION */
+.testimony--section {
+    background-color: var(--text-1);
+}
+
+.testimony--con {
+    width: min(900px, 90%);
+}
+
+.testimony--con h1:nth-child(1) {
+    text-align: center;
+    color: var(--accent-4);
+    text-transform: uppercase;
+}
+
+.testimony--con .test-person {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+}
+
+.testimony__name {
+    color: var(--accent-2);
+}
+
+.testimony__text p {
+    color: var(--bg-color);
+}
+
+.testimony .icon div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimony .icon img {
+    background-color: var(--accent-2);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
 /* T-NOTES--SECTION */
 .t-notes--con {
     display: flex;
@@ -291,6 +353,8 @@ h6 {
 /* P-TRAINER--SECTION */
 .p-trainer--con {
     display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 @media (width <=720px) {
@@ -302,6 +366,8 @@ h6 {
 /* MULTITASKING--SECTION */
 .multitasking--con {
     display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 @media (width <=720px) {
