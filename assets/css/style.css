@@ -39,7 +39,6 @@ h6 {
 }
 
 /* GLOBAL */
-
 .container {
     width: min(800px, 90%);
     margin: 0 auto;
@@ -75,6 +74,78 @@ h6 {
 
 .reverse {
     flex-direction: row-reverse;
+}
+
+.hidden {
+    display: none;
+}
+
+/* LOADER */
+.loader--con {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--accent-1);
+    z-index: 100;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader--con.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader h1 {
+    color: var(--bg-color);
+}
+
+.dot-con {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 10px;
+    justify-content: center;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    animation: bounce 1.5s infinite linear;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+
+    0%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+}
+
+/* IMPORTED ANIMATION CUSTOM */
+.intro--con .animate__animated.animate__backInUp {
+    animation-delay: 2s;
 }
 
 /* HEADER */
@@ -160,6 +231,10 @@ h6 {
         background-color: var(--bg-color);
     }
 
+    .hamburger .bars:nth-child(1) {
+        margin-top: 0;
+    }
+
     .hamburger.active .bars:nth-child(2) {
         opacity: 0;
     }
@@ -185,6 +260,7 @@ h6 {
 
 .intro--con p {
     font-weight: 500;
+    font-size: 1.75rem;
 }
 
 .intro--con img {
