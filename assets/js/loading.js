@@ -6,7 +6,7 @@ window.addEventListener("load", function () {
   loader.remove();
   introSection.classList.add("animate__backInDown");
   setTimeout(function () {
-    pTag.classList.remove("hidden");
-  }, 1000);
-  pTag.classList.add("animate__backInUp");
+    // pTag.classList.remove("hidden");
+    pTag.classList.add("animate__pulse");
+  }, 1500);
 });
