@@ -365,6 +365,17 @@ h6 {
     }
 }
 
+/* ABOUT */
+.time-availability {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.time-availability ul {
+    margin-left: 20px;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
