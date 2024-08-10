@@ -20,6 +20,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     z-index: 100;
 }
@@ -413,11 +417,11 @@ h6 {
 .contact-us li a {
     padding: 0;
     margin-block: .5rem;
-    text-decoration: none;
 }
 
 .contact-us li a:hover {
     color: var(--accent-4);
+    text-decoration: none;
 }
 
 /* FOOTER */

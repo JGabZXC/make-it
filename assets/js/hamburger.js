@@ -11,3 +11,14 @@ hamburger.addEventListener("click", function () {
   navbar.classList.toggle("active");
   hamburger.classList.toggle("active");
 });
+
+const menuEl = document.querySelectorAll(".menu li");
+
+menuEl.forEach((li) => {
+  li.addEventListener("click", function () {
+    header.classList.remove("active");
+    mainHeader.classList.remove("active");
+    navbar.classList.remove("active");
+    hamburger.classList.remove("active");
+  });
+});
