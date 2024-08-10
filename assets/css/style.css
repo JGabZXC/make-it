@@ -89,7 +89,6 @@ h6 {
 .btn:hover {
     color: var(--text-1);
     background-color: transparent;
-
 }
 
 /* LOADER */
@@ -170,6 +169,7 @@ h6 {
 
 .menu {
     display: flex;
+    align-items: center;
     gap: 1.5rem;
 }
 
@@ -373,7 +373,51 @@ h6 {
 }
 
 .time-availability ul {
+    list-style: circle;
     margin-left: 20px;
+}
+
+@media (width <=720px) {
+    .time-availability {
+        flex-direction: column;
+    }
+
+    .time-availability .t-notes-right {
+        display: none;
+    }
+}
+
+/* CONTACT */
+.contact--section {
+    background-color: var(--text-1);
+}
+
+.contact--section .def-font,
+.contact--section .paragraph,
+.contact--section h2 {
+    color: var(--bg-color);
+    margin-block: 0;
+    padding-block: .50rem;
+}
+
+.contact--section h2 {
+    padding-block: .50rem;
+}
+
+.contact-us ul {
+    list-style: circle;
+    color: var(--bg-color);
+    margin-left: 20px;
+}
+
+.contact-us li a {
+    padding: 0;
+    margin-block: .5rem;
+    text-decoration: none;
+}
+
+.contact-us li a:hover {
+    color: var(--accent-4);
 }
 
 /* FOOTER */
