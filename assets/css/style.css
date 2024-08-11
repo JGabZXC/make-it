@@ -69,6 +69,12 @@ h6 {
     margin-block: .50rem;
 }
 
+@media (width <=720px) {
+    .def-font {
+        font-size: 1.15rem;
+    }
+}
+
 .section-title {
     margin-block: .50rem;
 }
@@ -425,10 +431,32 @@ h6 {
 }
 
 /* FOOTER */
-footer {
-    text-align: center;
+.footer--con {
+    width: min(1200px, 90%);
+    display: flex;
+    gap: 20px;
 }
 
-footer .container {
-    margin: 2rem auto 0;
+.pow--con {
+    margin-top: 2rem;
+}
+
+@media(width <=720px) {
+    .footer--con {
+        flex-direction: column;
+    }
+
+    .pow {
+        text-align: center;
+    }
+}
+
+.footer--con ul {
+    list-style: circle;
+    margin-left: 20px;
+}
+
+.footer--con li a:hover {
+    color: var(--accent-4);
+    text-decoration: none;
 }
